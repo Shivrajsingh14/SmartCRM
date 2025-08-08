@@ -13,6 +13,9 @@ import Campaigns from './pages/Campaigns';
 import CampaignDetail from './pages/CampaignDetail';
 import CreateCampaign from './pages/CreateCampaign';
 import AuthCallbackPage from './pages/AuthCallback';
+import LandingPage from './pages/LandingPage';
+import AboutUs from './pages/AboutUs';
+import ContactUs from './pages/ContactUs';
 
 // Loading component for authentication state
 const LoadingFallback = ({ componentName = "component" }) => (
@@ -47,12 +50,17 @@ function App() {
         <AuthProvider>
           <Router>
             <Routes>
+              {/* Public pages with Navbar/Footer */}
+              <Route path="/" element={<LandingPage />} />
+              <Route path="/about" element={<AboutUs />} />
+              <Route path="/contact" element={<ContactUs />} />
+              
               {/* Auth routes */}
               <Route path="/login" element={<Login />} />
               <Route path="/auth/success" element={<AuthCallbackPage />} />
               
-              {/* Dashboard */}
-              <Route path="/" element={
+              {/* Dashboard (protected) */}
+              <Route path="/dashboard" element={
                 <ProtectedRoute>
                   <Dashboard />
                 </ProtectedRoute>
