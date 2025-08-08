@@ -37,6 +37,7 @@ app.use(cors({
             process.env.CLIENT_URL || 'http://localhost:3000',
             'http://localhost:3000',
             'http://localhost:3001',
+            'https://smartcrmai.netlify.app/',
             'http://localhost:3002'
         ];
         
