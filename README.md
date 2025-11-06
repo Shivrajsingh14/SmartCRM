@@ -1,6 +1,6 @@
 # CRM Platform
 
-A comprehensive CRM platform built for the Xeno SDE Internship Assignment 2025, featuring customer segmentation, campaign delivery, and AI-powered insights.
+A comprehensive CRM platform built featuring customer segmentation, campaign delivery, and AI-powered insights.
 
 
 ![image](https://github.com/user-attachments/assets/ef066d80-4648-40a8-8e13-70e211e04363)
